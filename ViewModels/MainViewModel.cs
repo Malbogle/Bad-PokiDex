@@ -32,7 +32,7 @@ namespace Pokedex.ViewModels
 
         private bool CanNav()
         {
-            return ((PokemonViewModel)_pokemonInfoViewModel).OnValidSearch;
+            return ((PokemonViewModel)_pokemonInfoViewModel).CurPokemonDisplaying != null;
         }
 
         public BindableBase CurViewModel
@@ -66,8 +66,5 @@ namespace Pokedex.ViewModels
             }
 
         }
-
-
-
     }
 }
