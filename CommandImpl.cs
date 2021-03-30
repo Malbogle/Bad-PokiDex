@@ -22,12 +22,13 @@ namespace Pokedex
             ExecutorMethod = executor;
         }
 
-        public event EventHandler CanExecuteChanged;
-
-        public void RaiseCanExecuteChanged()
+        public event EventHandler CanExecuteChanged
         {
-            CanExecuteChanged(this, EventArgs.Empty);
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
         }
+
+       
         public bool CanExecute(object parameter)
         {
             if (CanExecuteMethod != null)

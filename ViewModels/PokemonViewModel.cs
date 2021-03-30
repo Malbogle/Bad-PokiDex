@@ -42,8 +42,7 @@ namespace Pokedex.ViewModels
         }
    
         public CommandImpl SearchCommand { get; set; }
-        public CommandImpl NavToAbilitiesViewCommand { get; set; }
-        public CommandImpl NavToHomeCommand { get; set; }
+
 
         public Pokemon CurPokemonDisplaying 
         {
@@ -68,7 +67,7 @@ namespace Pokedex.ViewModels
                     if (_pokemonSearchName != value)
                     {
                         _pokemonSearchName = value;
-                        SearchCommand.RaiseCanExecuteChanged();
+                     
                     }
                 }
                 else
