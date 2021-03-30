@@ -1,0 +1,17 @@
+﻿<Application x:Class="Pokedex.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Pokedex"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="PokemonSolid">
+            <Setter Property="TextElement.FontFamily" Value="/Pokedex;component/Resources/Fonts/#Pokemon Solid"/>
+        </Style>
+        <Style x:Key="PokemonHollow">
+            <Setter Property="TextElement.FontFamily" Value="/Pokedex;component/Resources/Fonts/#Pokemon Hollow"/>
+        </Style>
+        <Style x:Key="Simplifica">
+            <Setter Property="TextElement.FontFamily" Value="/Pokedex;component/Resources/Fonts/#Simplifica"/>
+        </Style>
+    </Application.Resources>
+</Application>
